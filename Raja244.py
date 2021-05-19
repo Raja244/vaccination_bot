@@ -18,7 +18,7 @@ while(1):
     for i in range(1,8):
      today = date.today()+timedelta(days=i)
      day=today.strftime("%d-%m-%Y")
-     for i in ['714']:
+     for i in range[710,763]:
         i=str(i)
         x="https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/findByDistrict?district_id="+i+"&date="+day
         data=requests.get(x,headers=headers)
@@ -54,8 +54,8 @@ while(1):
             y=requests.get(nd_url)
             
             print(y)
-            time.sleep(60)
-    time.sleep(43200)
+            time.sleep(10)
+    time.sleep(60)
 
 
 @server.route('/' + TOKEN, methods=['POST'])
