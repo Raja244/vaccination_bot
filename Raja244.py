@@ -18,7 +18,7 @@ while(1):
     for i in range(1,8):
      today = date.today()+timedelta(days=i)
      day=today.strftime("%d-%m-%Y")
-     for i in range[710,763]:
+     for i in range(710,763):
         i=str(i)
         x="https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/findByDistrict?district_id="+i+"&date="+day
         data=requests.get(x,headers=headers)
